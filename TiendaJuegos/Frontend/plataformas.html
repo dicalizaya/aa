@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plataformas</title>
+<link rel="icon" href="../img/juegos/LOGO.png">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>PLATAFORMAS</h1>
+
+    <div id="menu-btn" class="menu-toggle">☰</div>
+
+    <nav>
+        <a href="interfazAdmin.html">Dashboard</a>
+        <a href="a_juegos.html">Juegos</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="plataformas.html">Plataformas</a>
+        <a href="proveedores.html">Proveedores</a>
+        <!-- <a href="usuarios.html">Usuarios</a> -->
+        
+        <a href="#" id="cerrarSesion">Salir</a>
+        
+
+    </nav>
+
+</header>
+
+<div class="contenedor">
+
+    <h2>Formulario Plataforma</h2>
+
+    <form id="formPlataforma">
+
+        <input id="nombrePlataforma" placeholder="Nombre">
+        <button type="submit" id="boton">Guardar</button>
+
+    </form>
+
+</div>
+
+<div class="contenedor">
+
+    <h2>Lista Plataformas</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaPlataformas"></tbody>
+
+    </table>
+
+</div>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/plataformas.js"></script>
+
+</body>
+</html>

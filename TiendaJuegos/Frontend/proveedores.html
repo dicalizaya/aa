@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedores</title>
+<link rel="icon" href="../img/juegos/LOGO.png">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>PROVEEDORES</h1>
+
+    <div id="menu-btn" class="menu-toggle">☰</div>
+
+    <nav>
+        <a href="interfazAdmin.html">Dashboard</a>
+        <a href="a_juegos.html">Juegos</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="plataformas.html">Plataformas</a>
+        <a href="proveedores.html">Proveedores</a>
+        <!-- <a href="usuarios.html">Usuarios</a> -->
+
+        
+        <a href="#" id="cerrarSesion">Salir</a>
+    </nav>
+
+</header>
+
+<div class="contenedor">
+
+    <h2>Formulario Proveedor</h2>
+
+    <form id="formProveedor">
+
+        <input id="nombreProveedor" placeholder="Nombre">
+        <input id="emailProveedor" placeholder="Correo">
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+</div>
+
+<div class="contenedor">
+
+    <h2>Lista Proveedores</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaProveedores"></tbody>
+
+    </table>
+
+</div>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/proveedores.js"></script>
+
+</body>
+</html>

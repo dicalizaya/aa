@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juegos Admin</title>
+<link rel="icon" href="../img/juegos/LOGO.png">
+
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>JUEGOS</h1>
+
+    <div id="menu-btn" class="menu-toggle">☰</div>
+
+    <nav>
+        <a href="interfazAdmin.html">Dashboard</a>
+        <a href="a_juegos.html">Juegos</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="plataformas.html">Plataformas</a>
+        <a href="proveedores.html">Proveedores</a>
+        <!-- <a href="usuarios.html">Usuarios</a> -->
+        <a href="#" id="cerrarSesion">Salir</a>
+    </nav>
+
+</header>
+
+<div class="contenedor">
+
+    <h2>Formulario Juego</h2>
+
+    <form id="formJuego">
+
+        <input id="nombreJuego" placeholder="Nombre">
+        <input id="descripcionJuego" placeholder="Descripción">
+        <input id="precioJuego" type="number" placeholder="Precio">
+        <input id="stockJuego" type="number" placeholder="Stock">
+        <input id="imagenJuego" placeholder="Imagen URL">
+
+        <select id="categoriaJuego"></select>
+        <select id="plataformaJuego"></select>
+        <select id="proveedorJuego"></select>
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+</div>
+
+<div class="contenedor">
+
+    <h2>Lista Juegos</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaJuegos"></tbody>
+
+    </table>
+
+</div>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/a_juegos.js"></script>
+
+</body>
+</html>

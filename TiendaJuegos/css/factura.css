@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0a0a0b;
+    color: #eeeeee;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1c;
+    border-bottom: 1px solid #2a2a2e;
+}
+
+.navbar h1 {
+    color: #ff003c;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #ff003c;
+}
+
+#saludoUsuario {
+    color: #a1a1aa;
+}
+
+.factura {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+}
+
+.factura h2 {
+    text-align: center;
+    color: #ff003c;
+    margin-bottom: 20px;
+}
+
+.factura-header {
+    color: #a1a1aa;
+    margin-bottom: 10px;
+}
+
+.factura-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.factura-item {
+    background-color: #0f0f10;
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.factura-item h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.factura-item p {
+    color: #a1a1aa;
+}
+
+.factura-total {
+    margin-top: 20px;
+    text-align: right;
+    color: #ff003c;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.factura-mensaje {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.factura-mensaje .exito {
+    color: #00ff66;
+    margin-bottom: 10px;
+}
+
+.factura-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.factura-actions .btn-login {
+    flex: 1;
+}
+
+.factura-vacia {
+    text-align: center;
+    color: #a1a1aa;
+    padding: 30px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px;
+
+    background-color: #ff003c;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #cc0030;
+}
+
+
+.menu-toggle {
+    display: none;
+
+    color: white;
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+}

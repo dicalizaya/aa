@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STORE.GG - Catálogo</title>
+
+    <link rel="icon" href="../img/juegos/LOGO.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>STORE.GG</h1>
+
+    <nav id="menu">
+
+        <p id="saludoUsuario"></p>
+<!--         <a href="perfil.html" id="saludoUsuario"></a>
+ -->
+        <a href="carrito.html">
+            Mi Carrito
+        </a>
+
+        <a href="#" onclick="cerrarSesion()">
+            Cerrar Sesión
+        </a>
+
+    </nav>
+    <div id="menu-btn" class="menu-toggle">
+        ☰
+    </div>
+</header>
+
+<section class="hero-usuario">
+
+    <div class="hero-contenido">
+
+        <h2>
+            Bienvenido a STORE.GG
+        </h2>
+
+        <p>
+            Descubre nuevos mundos y continúa tu aventura.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="buscador">
+
+    <input
+        type="text"
+        id="buscarJuego"
+        placeholder="Buscar videojuegos...">
+
+</section>
+
+<section class="catalogo">
+
+    <h2>
+        Catálogo de Videojuegos
+    </h2>
+
+    <div
+        id="lista-juegos"
+        class="juegos-grid">
+
+    </div>
+
+    <div class="paginacion">
+
+        <button id="btnAnterior">
+            ← Anterior
+        </button>
+
+        <span id="numeroPagina">
+            Página 1
+        </span>
+
+        <button id="btnSiguiente">
+            Siguiente →
+        </button>
+
+    </div>
+
+</section>
+
+<section>
+    <h2>Categorías</h2>
+    <div id="lista-categorias"></div>
+</section>
+<section>
+    <h2>Plataformas</h2>
+    <div id="lista-plataformas"></div>
+</section>
+<section>
+    <h2>Mis compras</h2>
+    <div id="lista-ventas"></div>
+</section>
+
+<footer class="footer">
+
+    <div>
+        STORE.GG © 2026
+    </div>
+
+    <div>
+        Steam • Epic Games • PlayStation • Xbox
+    </div>
+
+</footer>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/juegos.js"></script>
+<script src="../JS/menu.js"></script>
+<script src="../JS/sesion.js"></script>
+<script src="../JS/usuario.js"></script>
+</body>
+
+</html>

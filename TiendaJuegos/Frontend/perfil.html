@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mi Perfil - STORE.GG</title>
+
+<link rel="icon" href="../img/juegos/LOGO.png">
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>MI PERFIL</h1>
+
+    <nav>
+
+        <a href="interfazUsuario.html">Inicio</a>
+        <a href="carrito.html">Mi carrito</a>
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+
+    </nav>
+
+    <div id="menu-btn" class="menu-toggle">☰</div>
+
+</header>
+
+<section class="hero-usuario">
+
+    <div class="hero-contenido">
+
+        <h2>Editar mis datos</h2>
+        <p>Actualiza tu información personal</p>
+
+    </div>
+
+</section>
+
+<section class="contenedor-perfil">
+
+    <form id="formPerfil">
+
+        <div class="input-group">
+            <label>Nombre</label>
+            <input type="text" id="nombrePerfil">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="emailPerfil">
+        </div>
+
+        <div class="input-group">
+            <label>Nueva contraseña</label>
+            <input type="password" id="passwordPerfil">
+        </div>
+
+        <button type="submit" class="btn-ver">
+            Guardar cambios
+        </button>
+
+    </form>
+
+</section>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/perfil.js"></script>
+<script src="../JS/menu.js"></script>
+
+</body>
+
+</html>

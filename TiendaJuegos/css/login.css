@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0a0a0b;
+    color: #eeeeee;
+}
+
+/* =========================
+   LOGIN PAGE CENTER
+========================= */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    text-align: center;
+
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    width: 120px;
+    height: auto;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.login-wrapper h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* =========================
+   FORM INPUTS
+========================= */
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #a1a1aa;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+
+    background-color: #0a0a0b;
+    color: white;
+
+    border: 2px solid #2a2a2e;
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff003c;
+    box-shadow: 0 0 10px rgba(255, 0, 60, 0.4);
+}
+
+.input-group input::placeholder {
+    color: #4e4e54;
+}
+
+/* =========================
+   BOTÓN LOGIN
+========================= */
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+
+    background-color: #ff003c;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #cc0030;
+}
+
+/* =========================
+   MENSAJE LOGIN
+========================= */
+
+#mensajeLogin {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #a1a1aa;
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.login-footer p {
+    margin: 10px 0;
+    color: #71717a;
+}
+
+.login-footer a {
+    color: #ff003c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-footer a:hover {
+    color: #ff3363;
+}
+
+.back-home {
+    color: #a1a1aa;
+}

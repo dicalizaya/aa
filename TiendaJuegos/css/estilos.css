@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0a0a0b;
+    color: #eeeeee;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.login-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1c;
+    border-bottom: 1px solid #2a2a2e;
+}
+
+.navbar h1 {
+    color: #ff003c;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #ff003c;
+}
+
+#saludoUsuario {
+    color: #a1a1aa;
+}
+
+.hero-usuario {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-contenido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-contenido p {
+    color: #a1a1aa;
+}
+
+
+.buscador {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a1c;
+    border: 2px solid #2a2a2e;
+    border-radius: 10px;
+    color: white;
+}
+
+.buscador input:focus {
+    border-color: #ff003c;
+    outline: none;
+}
+
+
+.catalogo {
+    padding: 40px 20px;
+}
+
+.catalogo h2 {
+    text-align: center;
+    color: #ff003c;
+    margin-bottom: 30px;
+}
+
+
+.juegos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 1200px) {
+    .juegos-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+    .juegos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .juegos-grid { grid-template-columns: 1fr; }
+}
+
+.juego-card {
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.juego-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.5);
+}
+
+.juego-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info-juego {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-juego h3 {
+    min-height: 50px;
+    color: white;
+}
+
+.info-juego .precio {
+    color: #ff003c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.btn-ver {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #ff003c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-ver:hover {
+    background-color: #cc0030;
+}
+
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.paginacion button {
+    padding: 10px 15px;
+    border: 1px solid #2a2a2e;
+    background-color: #1a1a1c;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.paginacion button:hover {
+    background-color: #ff003c;
+}
+
+.paginacion span {
+    color: #a1a1aa;
+    min-width: 90px;
+    text-align: center;
+}
+
+
+section h2 {
+    text-align: center;
+    color: #ff003c;
+    margin: 40px 0 20px;
+}
+
+#lista-categorias,
+#lista-plataformas,
+#lista-ventas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0 20px 40px;
+}
+
+.card-simple,
+.card-venta {
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-simple:hover,
+.card-venta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.3);
+}
+
+
+.card-venta h4 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.card-venta p {
+    color: #a1a1aa;
+    font-size: 0.9rem;
+}
+
+
+
+.footer {
+    margin-top: 60px;
+    padding: 25px;
+    background-color: #1a1a1c;
+    border-top: 1px solid #2a2a2e;
+    text-align: center;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.detalle-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .detalle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.menu-toggle {
+    display: none;
+
+    color: white;
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+}
+
+.contenedor-perfil {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1c;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+}
+
+.contenedor-perfil .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contenedor-perfil label {
+    margin-bottom: 5px;
+    color: #a1a1aa;
+}
+
+.contenedor-perfil input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2a2e;
+    background-color: #0a0a0b;
+    color: white;
+}
+
+.contenedor-perfil input:focus {
+    border-color: #ff003c;
+    outline: none;
+}

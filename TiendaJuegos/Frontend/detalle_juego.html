@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Juego - STORE.GG</title>
+
+    <link rel="icon" href="../img/juegos/LOGO.png">
+    <link rel="stylesheet" href="../css/detalle.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h1>STORE.GG</h1>
+
+    <nav>
+
+        <a href="interfazUsuario.html">
+            Volver al Catálogo
+        </a>
+
+        <a href="carrito.html">
+            Mi Carrito
+        </a>
+
+        <a href="#" onclick="cerrarSesion()">
+            Cerrar Sesión
+        </a>
+
+    </nav>
+
+    <div id="menu-btn" class="menu-toggle">
+        ☰
+    </div>
+
+</header>
+
+<section class="detalle-container">
+
+    <div class="detalle-imagen">
+
+        <img id="imagenJuego"
+             src=""
+             alt="Videojuego">
+
+    </div>
+
+    <div class="detalle-info">
+
+        <h2 id="nombreJuego">
+            Cargando videojuego...
+        </h2>
+
+        <p id="categoriaJuego"
+           class="categoria">
+        </p>
+
+        <p id="descripcionJuego"
+           class="descripcion">
+        </p>
+
+        <h3 id="precioJuego"
+            class="precio">
+        </h3>
+
+        <button id="btnCarrito"
+                class="btn-login">
+
+            Agregar al Carrito
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/detalle_juego.js"></script>
+<script src="../JS/sesion.js"></script>
+<script src="../JS/menu.js"></script>
+
+
+</body>
+
+</html>
